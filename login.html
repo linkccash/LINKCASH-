@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>LINKCASH - Login</title>
-
-<style>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>LINKCASH - Login</title><style>
 *{
     box-sizing:border-box;
     margin:0;
@@ -18,7 +12,7 @@
 body{
     min-height:100vh;
     background:#050505;
-    color:#fff;
+    color:#ffffff;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -30,8 +24,6 @@ body{
     max-width:420px;
 }
 
-/* LOGO */
-
 .brand{
     text-align:center;
     margin-bottom:25px;
@@ -41,11 +33,6 @@ body{
     width:70px;
     height:70px;
     margin:auto;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
     border-radius:20px;
 
     background:linear-gradient(
@@ -55,40 +42,34 @@ body{
         #8f6b12
     );
 
-    color:#080808;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
+    color:#050505;
     font-size:24px;
     font-weight:900;
-
-    box-shadow:
-        0 0 30px rgba(212,167,44,.20);
 }
 
 .brand h1{
     margin-top:13px;
     font-size:28px;
     letter-spacing:3px;
+    color:#ffffff;
 }
 
 .brand p{
     margin-top:7px;
-    color:#777;
-    font-size:12px;
+    color:#888888;
+    font-size:13px;
 }
-
-/* CARD */
 
 .card{
     background:#101010;
-
     border:1px solid #292929;
-
     border-radius:22px;
-
     padding:28px 22px;
-
-    box-shadow:
-        0 25px 70px rgba(0,0,0,.65);
+    box-shadow:0 25px 70px rgba(0,0,0,.65);
 }
 
 .title{
@@ -97,15 +78,14 @@ body{
 
 .title h2{
     font-size:23px;
+    color:#ffffff;
     margin-bottom:7px;
 }
 
 .title p{
-    color:#777;
+    color:#888888;
     font-size:13px;
 }
-
-/* INPUT */
 
 .field{
     margin-bottom:17px;
@@ -113,11 +93,8 @@ body{
 
 .field label{
     display:block;
-
-    color:#ccc;
-
+    color:#dddddd;
     font-size:13px;
-
     margin-bottom:8px;
 }
 
@@ -126,32 +103,23 @@ input{
     height:50px;
 
     background:#070707;
-
     border:1px solid #292929;
-
     border-radius:12px;
 
-    color:#fff;
-
+    color:#ffffff;
     outline:none;
 
     padding:0 15px;
-
     font-size:14px;
 }
 
 input::placeholder{
-    color:#555;
+    color:#666666;
 }
 
 input:focus{
     border-color:#d4a72c;
-
-    box-shadow:
-        0 0 0 2px rgba(212,167,44,.08);
 }
-
-/* PASSWORD */
 
 .password-wrap{
     position:relative;
@@ -163,24 +131,18 @@ input:focus{
 
 .show-password{
     position:absolute;
-
     right:12px;
     top:50%;
-
     transform:translateY(-50%);
 
     border:none;
     background:none;
 
     color:#d4a72c;
-
     font-size:11px;
     font-weight:bold;
-
     cursor:pointer;
 }
-
-/* LOGIN BUTTON */
 
 .login-btn{
     width:100%;
@@ -189,7 +151,6 @@ input:focus{
     margin-top:5px;
 
     border:none;
-
     border-radius:13px;
 
     background:linear-gradient(
@@ -200,382 +161,338 @@ input:focus{
     );
 
     color:#080808;
-
     font-size:15px;
-
     font-weight:900;
 
     cursor:pointer;
 }
 
-.login-btn:active{
-    transform:scale(.98);
-}
-
-/* MESSAGE */
-
 .message{
     display:none;
-
     margin-top:14px;
-
     padding:12px;
 
     border-radius:10px;
-
     text-align:center;
 
     font-size:12px;
 }
 
-.message.success{
-    display:block;
-
-    color:#62df91;
-
-    background:rgba(40,180,100,.08);
-
-    border:1px solid rgba(40,180,100,.25);
-}
-
 .message.error{
     display:block;
-
     color:#ff7777;
-
     background:rgba(220,60,60,.08);
-
     border:1px solid rgba(220,60,60,.25);
 }
 
-/* REGISTER */
+.message.success{
+    display:block;
+    color:#62df91;
+    background:rgba(40,180,100,.08);
+    border:1px solid rgba(40,180,100,.25);
+}
 
 .register{
     text-align:center;
 
     margin-top:22px;
-
     padding-top:20px;
 
-    border-top:1px solid #222;
+    border-top:1px solid #222222;
 
-    color:#777;
-
+    color:#888888;
     font-size:13px;
 }
 
 .register a{
     color:#e0b83e;
-
     text-decoration:none;
-
     font-weight:bold;
 }
 
-/* BACK */
-
 .back{
     display:block;
-
     text-align:center;
 
     margin-top:18px;
 
-    color:#666;
-
+    color:#666666;
     text-decoration:none;
-
     font-size:12px;
 }
 
-.back:hover{
-    color:#d4a72c;
-}
-
-/* FOOTER */
-
 .footer{
     text-align:center;
-
     margin-top:18px;
 
-    color:#444;
-
+    color:#444444;
     font-size:10px;
 }
+</style></head><body><div class="wrapper"><div class="brand">
 
-</style>
-</head>
+    <div class="logo">LC</div>
 
-<body>
+    <h1>LINKCASH</h1>
 
-<div class="wrapper">
+    <p>Simple. Secure. Connected.</p>
 
-    <!-- BRAND -->
+</div>
 
-    <div class="brand">
 
-        <div class="logo">
-            LC
-        </div>
+<div class="card">
 
-        <h1>
-            LINKCASH
-        </h1>
+    <div class="title">
 
-        <p>
-            Simple. Secure. Connected.
-        </p>
+        <h2>Welcome Back</h2>
+
+        <p>Login to your LINKCASH account.</p>
 
     </div>
 
 
-    <!-- LOGIN CARD -->
+    <form id="loginForm">
 
-    <div class="card">
+        <div class="field">
 
-        <div class="title">
+            <label>Username</label>
 
-            <h2>
-                Welcome Back
-            </h2>
-
-            <p>
-                Login to your LINKCASH account.
-            </p>
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+                required
+            >
 
         </div>
 
 
-        <form id="loginForm">
+        <div class="field">
 
-            <!-- USERNAME -->
+            <label>Password</label>
 
-            <div class="field">
-
-                <label>
-                    Username
-                </label>
+            <div class="password-wrap">
 
                 <input
-                    type="text"
-                    id="username"
-                    placeholder="Enter your username"
-                    autocomplete="username"
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
                     required
                 >
 
-            </div>
-
-
-            <!-- PASSWORD -->
-
-            <div class="field">
-
-                <label>
-                    Password
-                </label>
-
-                <div class="password-wrap">
-
-                    <input
-                        type="password"
-                        id="password"
-                        placeholder="Enter your password"
-                        autocomplete="current-password"
-                        required
-                    >
-
-                    <button
-                        type="button"
-                        class="show-password"
-                        id="showPassword"
-                    >
-                        SHOW
-                    </button>
-
-                </div>
+                <button
+                    type="button"
+                    class="show-password"
+                    id="showPassword"
+                >
+                    SHOW
+                </button>
 
             </div>
-
-
-            <!-- LOGIN -->
-
-            <button
-                type="submit"
-                class="login-btn"
-            >
-                LOG IN
-            </button>
-
-        </form>
-
-
-        <!-- MESSAGE -->
-
-        <div
-            id="message"
-            class="message"
-        ></div>
-
-
-        <!-- REGISTER -->
-
-        <div class="register">
-
-            Don't have an account?
-
-            <a href="register.html">
-                Create Account
-            </a>
 
         </div>
 
-    </div>
+
+        <button
+            type="submit"
+            class="login-btn"
+        >
+            LOG IN
+        </button>
+
+    </form>
 
 
-    <!-- BACK -->
-
-    <a
-        href="index.html"
-        class="back"
-    >
-        ← Back to Home
-    </a>
+    <div id="message" class="message"></div>
 
 
-    <div class="footer">
-        © 2026 LINKCASH
+    <div class="register">
+
+        Don't have an account?
+
+        <a href="register.html">
+            Create Account
+        </a>
+
     </div>
 
 </div>
 
 
-<script>
+<a href="index.html" class="back">
+    ← Back to Home
+</a>
 
-/* ==============================
-   ELEMENTS
-============================== */
 
-const form =
-document.getElementById("loginForm");
+<div class="footer">
+    © 2026 LINKCASH
+</div>
 
-const username =
-document.getElementById("username");
+</div><script>
 
-const password =
-document.getElementById("password");
+const form = document.getElementById("loginForm");
+
+const usernameInput =
+    document.getElementById("username");
+
+const passwordInput =
+    document.getElementById("password");
 
 const showPassword =
-document.getElementById("showPassword");
+    document.getElementById("showPassword");
 
 const message =
-document.getElementById("message");
+    document.getElementById("message");
 
 
-/* ==============================
-   SHOW / HIDE PASSWORD
-============================== */
+/* SHOW PASSWORD */
 
-showPassword.addEventListener(
-    "click",
-    function(){
+showPassword.onclick = function(){
 
-        if(password.type === "password"){
+    if(passwordInput.type === "password"){
 
-            password.type = "text";
+        passwordInput.type = "text";
+        showPassword.textContent = "HIDE";
 
-            showPassword.textContent =
-                "HIDE";
+    }else{
 
-        }else{
-
-            password.type = "password";
-
-            showPassword.textContent =
-                "SHOW";
-
-        }
+        passwordInput.type = "password";
+        showPassword.textContent = "SHOW";
 
     }
-);
+
+};
 
 
-/* ==============================
-   MESSAGE
-============================== */
+/* MESSAGE */
 
 function showMessage(text,type){
 
-    message.className =
-        "message " + type;
-
-    message.textContent =
-        text;
+    message.className = "message " + type;
+    message.textContent = text;
+    message.style.display = "block";
 
 }
 
 
-/* ==============================
-   LOGIN
-============================== */
+/* LOGIN */
 
-form.addEventListener(
-    "submit",
-    function(event){
+form.onsubmit = function(event){
 
-        event.preventDefault();
+    event.preventDefault();
 
+    const username =
+        usernameInput.value.trim().toLowerCase();
 
-        const user =
-            username.value.trim();
-
-        const pass =
-            password.value;
+    const password =
+        passwordInput.value;
 
 
-        if(!user){
-
-            showMessage(
-                "Please enter your username.",
-                "error"
-            );
-
-            username.focus();
-
-            return;
-        }
-
-
-        if(!pass){
-
-            showMessage(
-                "Please enter your password.",
-                "error"
-            );
-
-            password.focus();
-
-            return;
-        }
-
-
-        /*
-         * TEMPORARY LOGIN
-         *
-         * Database haijaunganishwa.
-         * Tutaiunganisha baadaye.
-         */
+    if(username === ""){
 
         showMessage(
-            "Login system ready ✓",
-            "success"
+            "Please enter your username.",
+            "error"
         );
 
+        return;
     }
-);
 
-</script>
 
-</body>
+    if(password === ""){
+
+        showMessage(
+            "Please enter your password.",
+            "error"
+        );
+
+        return;
+    }
+
+
+    /* GET REGISTERED ACCOUNT */
+
+    const saved =
+        localStorage.getItem("linkcashAccount");
+
+
+    if(!saved){
+
+        showMessage(
+            "No account found. Please create an account first.",
+            "error"
+        );
+
+        return;
+    }
+
+
+    let account;
+
+
+    try{
+
+        account = JSON.parse(saved);
+
+    }catch(error){
+
+        showMessage(
+            "Account data is damaged. Please register again.",
+            "error"
+        );
+
+        return;
+    }
+
+
+    /* CHECK LOGIN */
+
+    if(
+        username !==
+        String(account.username).toLowerCase()
+        ||
+        password !==
+        String(account.password)
+    ){
+
+        showMessage(
+            "Username or password is incorrect.",
+            "error"
+        );
+
+        return;
+    }
+
+
+    /* SAVE LOGIN */
+
+    localStorage.setItem(
+        "linkcashLoggedIn",
+        "true"
+    );
+
+
+    localStorage.setItem(
+        "linkcashUser",
+        JSON.stringify(account)
+    );
+
+
+    showMessage(
+        "Login successful ✓ Opening dashboard...",
+        "success"
+    );
+
+
+    /* GO TO DASHBOARD */
+
+    setTimeout(function(){
+
+        window.location.href =
+            "dashboard.html";
+
+    },700);
+
+};
+
+</script></body>
 </html>
